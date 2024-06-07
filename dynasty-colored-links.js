@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Dynasty Colored Links
 // @namespace   https://dynasty-scans.com
+// @version     0.1
 // @author      saori
 // @description Colors links to works you've added to your read/subscribed/to read lists.
 // @match       https://dynasty-scans.com/
@@ -17,16 +18,13 @@
 // @match       https://dynasty-scans.com/tags*
 // @exclude     https://dynasty-scans.com/*/images
 // @exclude     https://dynasty-scans.com/pairings/
-// @version     Beta
-// @grant       none
-// @downloadURL
-// @updateURL
+// @downloadURL https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.js
+// @updateURL   https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.js
 // @require     https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.5.0/lz-string.min.js
 // ==/UserScript==
 
 (async function() {
-  // Constants
-  const DEBUG = true;
+  // constants
   const ORIGIN = document.location.origin;
   const PATHNAME = document.location.pathname;
 
@@ -47,7 +45,7 @@
 
   const PREFIX = 'color';
 
-  // Utility Functions
+  // Utility stuff
   const array = Array.from;
   const keys = Object.keys;
   const parser = new DOMParser();
@@ -68,24 +66,18 @@
         const valueToStore = type(value) === 'Set' ? array(value) : value;
         const valueAsString = JSON.stringify(valueToStore);
 
-        localStorage.setItem(
-          `${PREFIX}_${key}`,
-          DEBUG ? valueAsString : compress(valueAsString)
-        );
+        localStorage.setItem(`${PREFIX}_${key}`, compress(valueAsString));
       },
       get(key) {
         const storedValue = localStorage.getItem(`${PREFIX}_${key}`);
 
         if (storedValue === null) return undefined;
 
-        const value = JSON.parse(
-          DEBUG ? storedValue : decompress(storedValue)
-        );
+        const value = JSON.parse(decompress(storedValue));
         return type(value) === 'Array' ? new Set(value) : value;
       },
       update(listKey, item, action) {
         const storedItems = storage.get(listKey);
-
         if (storedItems === undefined) return;
 
         if (action === 'add') {
@@ -172,20 +164,16 @@
 
   await (async function() {
     // Get the cache
-    console.groupCollapsed('Retrieving cache');
     const listItems = {};
 
     for (const listKey of keys(COLORS)) {
       for (const subList of ['chapters', 'tags']) {
         const storageKey = `${listKey}_${subList}`;
         listItems[storageKey] = storage.get(storageKey) ?? new Set();
-        console.log(`Retrieved list ${storageKey} from cache:`, listItems[storageKey]);
       }
     }
-    console.groupEnd();
 
     // Get links from current page and add classes to them
-    console.groupCollapsed('Retrieving current page links');
     const links = getLinksFromCurrentPage();
 
     for (const link of links) {
@@ -196,13 +184,10 @@
 
         if (listItems[`${listKey}_${subList}`].has(linkPathname)) {
           link.classList.add(`${PREFIX}_${listKey}`);
-          console.log(`Added class to link ${linkPathname}`);
           break;
         }
       }
     }
-
-    console.groupEnd();
 
     // Create styles
     const styleElement = document.createElement('style');
@@ -217,58 +202,40 @@
 
     // Queue cache update
     async function updateCache() {
-      console.groupCollapsed('Updating cache');
       const listURLs = storage.get('urls') ?? await getAndStoreListURLs();
       const hasNexts = storage.get('hasNext') ?? {};
 
       for (const storageKey of keys(listItems)) {
-        console.groupCollapsed(`Updating ${storageKey} cache`);
         hasNexts[storageKey] ??= true;
         const [listKey, subList] = storageKey.split('_');
 
-        console.log(`List has next page? ${hasNexts[storageKey]}`);
-
         if (hasNexts[storageKey] === true) {
           const nextPage = Math.floor(listItems[storageKey].size / 40) + 1;
-          console.log(`Next list page to fetch: ${nextPage}`);
 
           const {newLinks, newHasNext} = await getListItems(
             listURLs[listKey], listKey, subList, nextPage,
           );
 
-          console.log('List items to add to list:', newLinks);
-          console.log(`List still has next page? ${newHasNext}`);
-
-          console.groupCollapsed('Adding items to list');
           for (const newLink of newLinks) {
             listItems[storageKey].add(newLink);
-            console.log(`Added ${newLink} to list`);
           }
-          console.groupEnd();
 
           storage.set(storageKey, listItems[storageKey]);
-          console.log('Saved updated storage.');
 
           if (hasNexts[storageKey] !== newHasNext) {
             hasNexts[storageKey] = newHasNext;
             storage.set('hasNext', hasNexts);
           }
         }
-        console.groupEnd();
       }
-      console.groupEnd();
     }
 
-
     if (document.visibilityState === 'hidden') {
-      console.log('Document is not visible; queueing cache update');
       document.onvisibilitychange = async function() {
-        console.log('Document became visible; updating cache');
         document.onvisibilitychange = null;
         await updateCache();
       }
     } else {
-      console.log('Document is visible; updating cache');
       await updateCache();
     }
   })();
@@ -277,7 +244,6 @@
   (async function() {
     if (!TRACKED.some(t => PATHNAME.startsWith(t))) return;
 
-    console.log('Hooking onto update requests');
     const baseOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function() {
       const method = arguments[0];
@@ -293,8 +259,6 @@
             const resBody = JSON.parse(this.response);
             const action = resBody.added ? 'add' : resBody.removed ? 'remove' : '';
 
-            console.log(`Updating list ${listKey}: ${action} ${PATHNAME}`);
-
             const itemType = PATHNAME.split('/')[1];
             const subList = itemType !== 'chapters' ? 'tags' : 'chapters';
 
@@ -305,6 +269,5 @@
 
       baseOpen.apply(this, arguments);
     }
-    console.log('Finished hooking');
   })();
 })();

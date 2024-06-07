@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name        Pixiv Arrow Key Navigation
 // @namespace   https://www.pixiv.net
+// @version     1.0
 // @author      saori
 // @description Lets you use the left and right arrow keys to move through certain pages on Pixiv.
 // @match       https://www.pixiv.net/bookmark_new_illust*.php*
 // @match       https://www.pixiv.net/search_user.php*
 // @match       https://www.pixiv.net/tags/*/*
 // @match       https://www.pixiv.net/en/tags/*/*
-// @version     1.0
+// @downloadURL https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.js
+// @updateURL   https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.js
 // ==/UserScript==
 
 (function() {
