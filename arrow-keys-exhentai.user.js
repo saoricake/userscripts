@@ -8,8 +8,8 @@
 // @exclude     https://exhentai.org/s/*
 // @exclude     https://exhentai.org/uconfig.php
 // @exclude     https://exhentai.org/mytags
-// @downloadURL https://github.com/saoricake/userscripts/raw/main/arrow-keys-exhentai.js
-// @updateURL   https://github.com/saoricake/userscripts/raw/main/arrow-keys-exhentai.js
+// @downloadURL https://github.com/saoricake/userscripts/raw/main/arrow-keys-exhentai.user.js
+// @updateURL   https://github.com/saoricake/userscripts/raw/main/arrow-keys-exhentai.user.js
 // ==/UserScript==
 
 (function() {

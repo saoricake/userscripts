@@ -8,8 +8,8 @@
 // @match       https://www.pixiv.net/search_user.php*
 // @match       https://www.pixiv.net/tags/*/*
 // @match       https://www.pixiv.net/en/tags/*/*
-// @downloadURL https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.js
-// @updateURL   https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.js
+// @downloadURL https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.user.js
+// @updateURL   https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.user.js
 // ==/UserScript==
 
 (function() {

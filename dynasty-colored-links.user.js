@@ -18,8 +18,8 @@
 // @match       https://dynasty-scans.com/tags*
 // @exclude     https://dynasty-scans.com/*/images
 // @exclude     https://dynasty-scans.com/pairings/
-// @downloadURL https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.js
-// @updateURL   https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.js
+// @downloadURL https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js
+// @updateURL   https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js
 // @require     https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.5.0/lz-string.min.js
 // ==/UserScript==
 
