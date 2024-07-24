@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        I Hate YouTube Shorts
-// @namespace   https://www.youtube.com
-// @version     1.0
+// @namespace   https://github.com/saoricake/userscripts
+// @version     1.0.1
 // @author      saori
 // @description Redirects shorts to the standard video player.
 // @match       *://*.youtube.com/*

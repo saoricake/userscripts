@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Exhentai Arrow Key Navigation
-// @namespace   https://exhentai.org
-// @version     1.0
+// @namespace   https://github.com/saoricake/userscripts
+// @version     1.0.1
 // @author      saori
 // @description Lets you use the left and right arrow keys to move through certain pages on Exhentai.
 // @match       https://exhentai.org/*

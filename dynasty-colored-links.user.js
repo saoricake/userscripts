@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Dynasty Colored Links
-// @namespace   https://dynasty-scans.com
-// @version     0.1
+// @namespace   https://github.com/saoricake/userscripts
+// @version     0.1.1
 // @author      saori
 // @description Colors links to works you've added to your read/subscribed/to read lists.
 // @match       https://dynasty-scans.com/
