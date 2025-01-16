@@ -4,6 +4,7 @@ repo for userscripts created by me, saori. unless stated otherwise, they were al
 - [I Hate YouTube Shorts](#i-hate-youtube-shorts)
 - [Exhentai Arrow Key Navigation](#exhentai-arrow-key-navigation)
 - [Pixiv Arrow Key Navigation](#pixiv-arrow-key-navigation)
+- [Pixiv Skip Offsite Link Interceptor](#pixiv-skip-offsite-link-interceptor)
 
 ## [Dynasty Colored Links](https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js)
 
@@ -26,3 +27,7 @@ allows you to navigate through search and gallery pages on [exhentai](https://ex
 ## [Pixiv Arrow Key Navigation](https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.user.js)
 
 does the same as the above, but on [pixiv](https://www.pixiv.net/) search, etc. pages instead.
+
+## [Pixiv Skip Offsite Link Interceptor](https://github.com/saoricake/userscripts/raw/main/pixiv-offsite-links.user.js)
+
+normally, when you click you're on pixiv and you click a link that'll take you to some other site, you'll be redirected to an interstitial page first. this script makes it so that doesn't happen, and that links work as you'd expect them to.
