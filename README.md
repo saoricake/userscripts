@@ -1,11 +1,14 @@
 repo for userscripts created by me, saori. unless stated otherwise, they were all made (and tested) with [violentmonkey](https://violentmonkey.github.io/) on firefox.
 
+- [Arrow Key Navigation](#arrow-key-navigation)
 - [Bluesky Username-to-Link in Tweet Pages](#bluesky-username-to-link-in-tweet-pages)
 - [Dynasty Colored Links](#dynasty-colored-links)
 - [I Hate YouTube Shorts](#i-hate-youtube-shorts)
-- [Exhentai Arrow Key Navigation](#exhentai-arrow-key-navigation)
-- [Pixiv Arrow Key Navigation](#pixiv-arrow-key-navigation)
 - [Pixiv Skip Offsite Link Interceptor](#pixiv-skip-offsite-link-interceptor)
+
+## [Arrow Key Navigation](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation.user.js)
+
+allows navigating through pages on [pixiv](https://www.pixiv.net/), [exhentai](https://exhentai.org/), and [hentainexus](https://hentainexus.com/) with the arrow keys.
 
 ## [Bluesky Username-to-Link in Tweet Pages](https://github.com/saoricake/userscripts/raw/main/bluesky-username-to-link.user.js)
 
@@ -24,14 +27,6 @@ if a link appears colored when it shouldn't (or vice versa (...and other things 
 redirects links to youtube shorts to the standard video player, so you don't have to deal with that tiktokified bullshit.
 
 there already are some userscripts that do this, but the ones i found were pretty slow to do the page change. this one has it happen instantly, so you won't even see the shorts page.
-
-## [Exhentai Arrow Key Navigation](https://github.com/saoricake/userscripts/raw/main/arrow-keys-exhentai.user.js)
-
-allows you to navigate through search and gallery pages on [exhentai](https://exhentai.org/) with the left and right arrow keys.
-
-## [Pixiv Arrow Key Navigation](https://github.com/saoricake/userscripts/raw/main/arrow-keys-pixiv.user.js)
-
-does the same as the above, but on [pixiv](https://www.pixiv.net/) search, etc. pages instead.
 
 ## [Pixiv Skip Offsite Link Interceptor](https://github.com/saoricake/userscripts/raw/main/pixiv-offsite-links.user.js)
 
