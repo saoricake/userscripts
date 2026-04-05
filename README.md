@@ -1,7 +1,6 @@
 repo for userscripts created by me, saori. unless stated otherwise, they were all made (and tested) with [violentmonkey](https://violentmonkey.github.io/) on firefox.
 
 - [Arrow Key Navigation](#arrow-key-navigation)
-- [Bluesky Username-to-Link in Tweet Pages](#bluesky-username-to-link-in-tweet-pages)
 - [Dynasty Colored Links](#dynasty-colored-links)
 - [I Hate YouTube Shorts](#i-hate-youtube-shorts)
 - [Pixiv Skip Offsite Link Interceptor](#pixiv-skip-offsite-link-interceptor)
@@ -9,10 +8,6 @@ repo for userscripts created by me, saori. unless stated otherwise, they were al
 ## [Arrow Key Navigation](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation.user.js)
 
 allows navigating through pages on [pixiv](https://www.pixiv.net/), [exhentai](https://exhentai.org/), and [hentainexus](https://hentainexus.com/) with the arrow keys.
-
-## [Bluesky Username-to-Link in Tweet Pages](https://github.com/saoricake/userscripts/raw/main/bluesky-username-to-link.user.js)
-
-if you open a tweet in bluesky, you might notice that the author's username/@ are not proper links, so you can't, say, middle-click it to open it in a new tab. (this might be a firefox-only issue? (but also, why is it an issue in the first place???)) this script turns them into actual links, like they should've been in the first place.
 
 ## [Dynasty Colored Links](https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js)
 
