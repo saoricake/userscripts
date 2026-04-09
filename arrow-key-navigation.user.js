@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Arrow Key Navigation
 // @namespace   https://github.com/saoricake/userscripts
-// @version     1.0.0
+// @version     1.0.1
 // @author      saori
 // @description Lets you use the left and right arrow keys to move through pages on select websites.
 // @match       *://exhentai.org/*
@@ -44,8 +44,8 @@
         }
         default: {
           return {
-            "ArrowLeft": "nav:has(a):last-child a:first-of-type",
-            "ArrowRight": "nav:has(a):last-child a:last-of-type"
+            "ArrowLeft": "nav:has(> a):last-child a:first-of-type",
+            "ArrowRight": "nav:has(> a):last-child a:last-of-type"
           }
         }
       }
@@ -61,6 +61,6 @@
     const query = linkQueryMap[location.host]()[ev.key];
     const link = document.querySelector(query);
 
-    if (link) { link.onclick(); }
+    if (link) { link.click(); }
   }
 })();
