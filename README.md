@@ -5,9 +5,11 @@ repo for userscripts created by me, saori. unless stated otherwise, they were al
 - [I Hate YouTube Shorts](#i-hate-youtube-shorts)
 - [Pixiv Skip Offsite Link Interceptor](#pixiv-skip-offsite-link-interceptor)
 
-## [Arrow Key Navigation](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation.user.js)
+## Arrow Key Navigation
 
-allows navigating through pages on [pixiv](https://www.pixiv.net/), [exhentai](https://exhentai.org/), and [hentainexus](https://hentainexus.com/) with the arrow keys.
+a collection of scripts. each of them adds the ability to navigate through paginated pages with the left and right arrow keys to a particular site that doesn't have that functionality.
+
+available for [dynasty scans](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/dynastyscans.user.js), [exhentai](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/exhentai.user.js), [hentainexus](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/hentainexus.user.js), and [pixiv](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/pixiv.user.js).
 
 ## [Dynasty Colored Links](https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js)
 
@@ -25,4 +27,4 @@ there already are some userscripts that do this, but the ones i found were prett
 
 ## [Pixiv Skip Offsite Link Interceptor](https://github.com/saoricake/userscripts/raw/main/pixiv-offsite-links.user.js)
 
-normally, when you click you're on pixiv and you click a link that'll take you to some other site, you'll be redirected to an interstitial page first. this script makes it so that doesn't happen, and that links work as you'd expect them to.
+normally, when you're on pixiv and click a link that'll take you to some other site, you'll be redirected to an interstitial page first, where you have to manually click another link to proceed. this script makes those pages proceed automatically.
