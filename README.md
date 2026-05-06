@@ -1,6 +1,7 @@
 repo for userscripts created by me, saori. unless stated otherwise, they were all made (and tested) with [violentmonkey](https://violentmonkey.github.io/) on firefox.
 
 - [Arrow Key Navigation](#arrow-key-navigation)
+- [Dynasty List Marker](#dynasty-list-marker)
 - [Dynasty Colored Links](#dynasty-colored-links)
 - [I Hate YouTube Shorts](#i-hate-youtube-shorts)
 - [Pixiv Skip Offsite Link Interceptor](#pixiv-skip-offsite-link-interceptor)
@@ -10,6 +11,12 @@ repo for userscripts created by me, saori. unless stated otherwise, they were al
 a collection of scripts. each of them adds the ability to navigate through paginated pages with the left and right arrow keys to a particular site that doesn't have that functionality.
 
 available for [dynasty scans](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/dynastyscans.user.js), [exhentai](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/exhentai.user.js), [hentainexus](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/hentainexus.user.js), and [pixiv](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/pixiv.user.js).
+
+## [Dynasty List Marker](https://github.com/saoricake/userscripts/raw/main/dynasty-list-marker/README.md)
+
+styles links on [dynasty scans](https://dynasty-scans.com/) based on whether you've added the work it's linking to to your read, to-read, favorites, or subscribed lists. based on the old [dynasty mark read](https://github.com/luejerry/dynasty-markread) script by cyricc/luejerry.
+
+for more information, check out the [readme](https://github.com/saoricake/userscripts/raw/main/dynasty-list-marker/README.md).
 
 ## [Dynasty Colored Links](https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js)
 
