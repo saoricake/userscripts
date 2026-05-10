@@ -12,11 +12,11 @@ a collection of scripts. each of them adds the ability to navigate through pagin
 
 available for [dynasty scans](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/dynastyscans.user.js), [exhentai](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/exhentai.user.js), [hentainexus](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/hentainexus.user.js), and [pixiv](https://github.com/saoricake/userscripts/raw/main/arrow-key-navigation/pixiv.user.js).
 
-## [Dynasty List Marker](https://github.com/saoricake/userscripts/raw/main/dynasty-list-marker/README.md)
+## [Dynasty List Marker](https://github.com/saoricake/userscripts/blob/main/dynasty-list-marker/README.md)
 
 styles links on [dynasty scans](https://dynasty-scans.com/) based on whether you've added the work it's linking to to your read, to-read, favorites, or subscribed lists. based on the old [dynasty mark read](https://github.com/luejerry/dynasty-markread) script by cyricc/luejerry.
 
-for more information, check out the [readme](https://github.com/saoricake/userscripts/raw/main/dynasty-list-marker/README.md).
+for more information, check out the [readme](https://github.com/saoricake/userscripts/blob/main/dynasty-list-marker/README.md).
 
 ## [Dynasty Colored Links](https://github.com/saoricake/userscripts/raw/main/dynasty-colored-links.user.js)
 
