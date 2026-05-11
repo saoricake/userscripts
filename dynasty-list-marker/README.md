@@ -4,7 +4,11 @@ this userscript changes what a link on [dynasty scans](https://dynasty-scans.com
 
 based on the old [dynasty mark read](https://github.com/luejerry/dynasty-markread) script, which was great, but stopped working when the site changed lists to be paginated (only items on the first page of a list were being kept track of). i consider this to be essential functionality for a manga reader, so i decided to make my own version of the script, also taking the opportunity to adjust some things.
 
-**install the script by clicking [HERE](https://github.com/saoricake/userscripts/raw/main/dynasty-list-marker/script.user.js)! but make sure to read on to understand how it works, too!**
+## installation
+
+0. install a userscript manager extension on your browser, like [tampermonkey](https://www.tampermonkey.net/index.php), [greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), or [violentmonkey](https://violentmonkey.github.io/get-it/) (personally, i use the last one).
+    - if you're using a chromium-based browser, like chrome or vivaldi and such, you may also have to go into the extension's option (through the general extensions menu) and toggle "Allow User Scripts" to on.
+1. **install the script by clicking [HERE](https://github.com/saoricake/userscripts/raw/main/dynasty-list-marker/script.user.js)! but make sure to read on to understand how it works, too!**
 
 ## usage
 
